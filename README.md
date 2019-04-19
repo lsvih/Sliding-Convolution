@@ -1,6 +1,6 @@
 # Sliding Convolution CTC for Scene Text Recognition
 
-**Unofficial** implementation of 'Scene Text Recognition with Sliding Convolutional Character Models'
+Implementation of 'Scene Text Recognition with Sliding Convolutional Character Models'([pdf](https://arxiv.org/pdf/1709.01727))
 
 ### Model
 
@@ -33,7 +33,7 @@ CUDNN 7.0.5
 
 #### Install warp-ctc
 
-Follow this [instruction](https://github.com/SeanNaren/warp-ctc/commit/ac045b6072b9bc3454fb9f9f17674f0d59373789)
+Follow this [instruction](https://github.com/SeanNaren/warp-ctc/tree/0.4.1)
 
 > **Note**:Version of warp-ctc should be corresponding with pytorch. [Related issue](https://github.com/SeanNaren/warp-ctc/issues/101)
 
@@ -59,7 +59,7 @@ Test model:
 python3 main.py --cuda=True --mode=test
 ```
 
-> **Note**: `model.bin` file is a pre-trained model which could achieve about 53% accuracy. 
+> **Note**: `model.bin` file is a pre-trained model which could achieve about 53% accuracy. (Due to the small training dataset)
 
 ### Citation
 
